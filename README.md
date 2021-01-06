@@ -1,6 +1,6 @@
+<img src="assets/images/science_logo_400x400.jpg" style="width: 150px; float: right;">
+
 # SIPBS Research Day Bioinformatics Workshop 13th January 2021
-
-
 
 ## Introduction
 
