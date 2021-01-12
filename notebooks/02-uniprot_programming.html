@@ -14321,7 +14321,7 @@ a.anchor-link {
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[1]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># io is a standard library package that lets us manipulate data</span>
@@ -14406,10 +14406,10 @@ a.anchor-link {
 <h3 id="EXAMPLE:-Putting-it-together">EXAMPLE: Putting it together<a class="anchor-link" href="#EXAMPLE:-Putting-it-together">&#182;</a></h3><p>The code in the cell below uses the example code above to create an instance of the <code>UniProt()</code> class, and uses it to submit a pre-stored query to the <code>UniProt</code> service, then catch the result in a variable called <code>result</code>. The <code>print()</code> statement then shows us what the result returned by the service looks like.</p>
 
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[2]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Make a link to the UniProt webservice (UniProt())</span>
@@ -14430,16 +14430,39 @@ a.anchor-link {
 </div>
 </div>
 
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>Entry	Entry name	Status	Protein names	Gene names	Organism	Length
+Q9AJE3	CYC2_KITGR	reviewed	Terpentetriene synthase (EC 4.2.3.36)	cyc2	Kitasatospora griseola (Streptomyces griseolosporeus)	311
+
+</pre>
+</div>
+</div>
+
+</div>
+
+</div>
+
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <p>The <code>UniProt()</code> instance defined in the cell above is <em>persistent</em>, so you can reuse it to make another query, as in the cell below:</p>
 
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[3]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Make a new query string &quot;Q01844&quot;, and run a remote search at UniProt</span>
@@ -14453,6 +14476,47 @@ a.anchor-link {
      </div>
 </div>
 </div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>Entry	Entry name	Status	Protein names	Gene names	Organism	Length
+Q01844	EWS_HUMAN	reviewed	RNA-binding protein EWS (EWS oncogene) (Ewing sarcoma breakpoint region 1 protein)	EWSR1 EWS	Homo sapiens (Human)	656
+Q13077	TRAF1_HUMAN	reviewed	TNF receptor-associated factor 1 (Epstein-Barr virus-induced protein 6)	TRAF1 EBI6	Homo sapiens (Human)	416
+Q13485	SMAD4_HUMAN	reviewed	Mothers against decapentaplegic homolog 4 (MAD homolog 4) (Mothers against DPP homolog 4) (Deletion target in pancreatic carcinoma 4) (SMAD family member 4) (SMAD 4) (Smad4) (hSMAD4)	SMAD4 DPC4 MADH4	Homo sapiens (Human)	552
+P49910	ZN165_HUMAN	reviewed	Zinc finger protein 165 (Cancer/testis antigen 53) (CT53) (LD65) (Zinc finger and SCAN domain-containing protein 7)	ZNF165 ZPF165 ZSCAN7	Homo sapiens (Human)	485
+O95486	SC24A_HUMAN	reviewed	Protein transport protein Sec24A (SEC24-related protein A)	SEC24A	Homo sapiens (Human)	1093
+Q9NS23	RASF1_HUMAN	reviewed	Ras association domain-containing protein 1	RASSF1 RDA32	Homo sapiens (Human)	344
+Q12933	TRAF2_HUMAN	reviewed	TNF receptor-associated factor 2 (EC 2.3.2.27) (E3 ubiquitin-protein ligase TRAF2) (RING-type E3 ubiquitin transferase TRAF2) (Tumor necrosis factor type 2 receptor-associated protein 3)	TRAF2 TRAP3	Homo sapiens (Human)	501
+Q92734	TFG_HUMAN	reviewed	Protein TFG (TRK-fused gene protein)	TFG	Homo sapiens (Human)	400
+O94855	SC24D_HUMAN	reviewed	Protein transport protein Sec24D (SEC24-related protein D)	SEC24D KIAA0755	Homo sapiens (Human)	1032
+P35637	FUS_HUMAN	reviewed	RNA-binding protein FUS (75 kDa DNA-pairing protein) (Oncogene FUS) (Oncogene TLS) (POMp75) (Translocated in liposarcoma protein)	FUS TLS	Homo sapiens (Human)	526
+Q8NDC0	MISSL_HUMAN	reviewed	MAPK-interacting and spindle-stabilizing protein-like (Mitogen-activated protein kinase 1-interacting protein 1-like)	MAPK1IP1L C14orf32	Homo sapiens (Human)	245
+Q9UBV8	PEF1_HUMAN	reviewed	Peflin (PEF protein with a long N-terminal hydrophobic domain) (Penta-EF hand domain-containing protein 1)	PEF1 ABP32 UNQ1845/PRO3573	Homo sapiens (Human)	284
+O15162	PLS1_HUMAN	reviewed	Phospholipid scramblase 1 (PL scramblase 1) (Ca(2+)-dependent phospholipid scramblase 1) (Erythrocyte phospholipid scramblase) (Mg(2+)-dependent nuclease) (EC 3.1.-.-) (MmTRA1b)	PLSCR1	Homo sapiens (Human)	318
+Q9NZ81	PRR13_HUMAN	reviewed	Proline-rich protein 13 (Taxane-resistance protein)	PRR13 TXR1 BM-041	Homo sapiens (Human)	148
+Q9BWW4	SSBP3_HUMAN	reviewed	Single-stranded DNA-binding protein 3 (Sequence-specific single-stranded-DNA-binding protein)	SSBP3 SSDP SSDP1	Homo sapiens (Human)	388
+Q99873	ANM1_HUMAN	reviewed	Protein arginine N-methyltransferase 1 (EC 2.1.1.319) (Histone-arginine N-methyltransferase PRMT1) (Interferon receptor 1-bound protein 4)	PRMT1 HMT2 HRMT1L2 IR1B4	Homo sapiens (Human)	371
+Q92993	KAT5_HUMAN	reviewed	Histone acetyltransferase KAT5 (EC 2.3.1.48) (60 kDa Tat-interactive protein) (Tip60) (Histone acetyltransferase HTATIP) (HIV-1 Tat interactive protein) (Lysine acetyltransferase 5) (cPLA(2)-interacting protein)	KAT5 HTATIP TIP60	Homo sapiens (Human)	513
+Q09472	EP300_HUMAN	reviewed	Histone acetyltransferase p300 (p300 HAT) (EC 2.3.1.48) (E1A-associated protein p300) (Histone butyryltransferase p300) (EC 2.3.1.-) (Histone crotonyltransferase p300) (EC 2.3.1.-) (Protein 2-hydroxyisobutyryltransferase p300) (EC 2.3.1.-) (Protein propionyltransferase p300) (EC 2.3.1.-)	EP300 P300	Homo sapiens (Human)	2414
+Q8N5M1	ATPF2_HUMAN	reviewed	ATP synthase mitochondrial F1 complex assembly factor 2 (ATP12 homolog)	ATPAF2 ATP12 LP3663	Homo sapiens (Human)	289
+
+</pre>
+</div>
+</div>
+
+</div>
+
 </div>
 
 </div>
@@ -14475,10 +14539,10 @@ a.anchor-link {
 <p>Note that we can use the same variable name <code>query</code> as earlier (this overwrites the previous value in <code>query</code>). The code below runs the search and shows the output:</p>
 
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[4]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Make a new query string (&quot;accession:Q01844&quot;), and run a remote search at UniProt</span>
@@ -14492,6 +14556,29 @@ a.anchor-link {
      </div>
 </div>
 </div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>Entry	Entry name	Status	Protein names	Gene names	Organism	Length
+Q01844	EWS_HUMAN	reviewed	RNA-binding protein EWS (EWS oncogene) (Ewing sarcoma breakpoint region 1 protein)	EWSR1 EWS	Homo sapiens (Human)	656
+
+</pre>
+</div>
+</div>
+
+</div>
+
 </div>
 
 </div>
@@ -14517,10 +14604,10 @@ a.anchor-link {
 </ul>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[5]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># SOLUTION - EXERCISE 01</span>
@@ -14534,10 +14621,55 @@ a.anchor-link {
 </div>
 </div>
 
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>Entry	Entry name	Status	Protein names	Gene names	Organism	Length
+P0AFG6	ODO2_ECOLI	reviewed	Dihydrolipoyllysine-residue succinyltransferase component of 2-oxoglutarate dehydrogenase complex (EC 2.3.1.61) (2-oxoglutarate dehydrogenase complex component E2) (OGDC-E2) (Dihydrolipoamide succinyltransferase component of 2-oxoglutarate dehydrogenase complex)	sucB b0727 JW0716	Escherichia coli (strain K12)	405
+Q03132	ERYA2_SACER	reviewed	6-deoxyerythronolide-B synthase EryA2, modules 3 and 4 (DEBS 2) (EC 2.3.1.94) (6-deoxyerythronolide B synthase II) (Erythronolide synthase) (ORF B)	eryA	Saccharopolyspora erythraea (Streptomyces erythraeus)	3567
+Q32NN2	QKIA_XENLA	reviewed	Protein quaking-A (Xqua)	qki-a	Xenopus laevis (African clawed frog)	341
+P83917	CBX1_MOUSE	reviewed	Chromobox protein homolog 1 (Heterochromatin protein 1 homolog beta) (HP1 beta) (Heterochromatin protein p25) (M31) (Modifier 1 protein)	Cbx1 Cbx	Mus musculus (Mouse)	185
+P63159	HMGB1_RAT	reviewed	High mobility group protein B1 (Amphoterin) (Heparin-binding protein p30) (High mobility group protein 1) (HMG-1)	Hmgb1 Hmg-1 Hmg1	Rattus norvegicus (Rat)	215
+P03956	MMP1_HUMAN	reviewed	Interstitial collagenase (EC 3.4.24.7) (Fibroblast collagenase) (Matrix metalloproteinase-1) (MMP-1) [Cleaved into: 22 kDa interstitial collagenase; 27 kDa interstitial collagenase]	MMP1 CLG	Homo sapiens (Human)	469
+P10515	ODP2_HUMAN	reviewed	Dihydrolipoyllysine-residue acetyltransferase component of pyruvate dehydrogenase complex, mitochondrial (EC 2.3.1.12) (70 kDa mitochondrial autoantigen of primary biliary cirrhosis) (PBC) (Dihydrolipoamide acetyltransferase component of pyruvate dehydrogenase complex) (M2 antigen complex 70 kDa subunit) (Pyruvate dehydrogenase complex component E2) (PDC-E2) (PDCE2)	DLAT DLTA	Homo sapiens (Human)	647
+Q863B3	SND1_BOVIN	reviewed	Staphylococcal nuclease domain-containing protein 1 (EC 3.1.31.1) (100 kDa coactivator) (p100 co-activator)	SND1	Bos taurus (Bovine)	910
+P0ABD8	BCCP_ECOLI	reviewed	Biotin carboxyl carrier protein of acetyl-CoA carboxylase (BCCP)	accB fabE b3255 JW3223	Escherichia coli (strain K12)	156
+Q6IRN2	QKIB_XENLA	reviewed	Protein quaking-B	qki-b	Xenopus laevis (African clawed frog)	342
+Q9JZ09	Q9JZ09_NEIMB	unreviewed	Dihydrolipoyl dehydrogenase (EC 1.8.1.4)	lpdA2 NMB1344	Neisseria meningitidis serogroup B (strain MC58)	594
+P56596	PSAD_NOSS8	reviewed	Photosystem I reaction center subunit II (Photosystem I 16 kDa polypeptide) (PSI-D)	psaD	Nostoc sp. (strain PCC 8009)	138
+Q6MZA5	Q6MZA5_MYCUA	unreviewed	Type I modular polyketide synthase	mlsA2 MUP039c	Mycobacterium ulcerans (strain Agy99)	2410
+Q6MZA4	Q6MZA4_MYCUA	unreviewed	Type I modular polyketide synthase	mlsA1 MUP040c	Mycobacterium ulcerans (strain Agy99)	16990
+Q6MZ72	Q6MZ72_MYCUA	unreviewed	Type I modular polyketide synthase	mlsB MUP032c	Mycobacterium ulcerans (strain Agy99)	14130
+Q9R6W5	Q9R6W5_NOSS8	unreviewed	Photosystem I reaction center subunit II	psaD	Nostoc sp. (strain PCC 8009)	139
+Q5ZPA9	Q5ZPA9_9DELT	unreviewed	TubC protein	tubC	Archangium disciforme	2625
+A0A3G2YQL8	A0A3G2YQL8_9ALPH	unreviewed	DNA-directed DNA polymerase (EC 2.7.7.7) (Fragment)		Chelonid alphaherpesvirus 5	161
+A0A3G2YQS0	A0A3G2YQS0_9ALPH	unreviewed	DNA-directed DNA polymerase (EC 2.7.7.7) (Fragment)		Chelonid alphaherpesvirus 5	161
+A0A3G2YRB9	A0A3G2YRB9_9ALPH	unreviewed	DNA-directed DNA polymerase (EC 2.7.7.7) (Fragment)		Chelonid alphaherpesvirus 5	161
+Q9WWN8	Q9WWN8_NOSS8	unreviewed	Anthranilate synthase component I (Fragment)	trpE	Nostoc sp. (strain PCC 8009)	237
+Q9WWN9	Q9WWN9_NOSS8	unreviewed	Sensory transduction histidine kinase (Fragment)		Nostoc sp. (strain PCC 8009)	98
+Q86UF7	Q86UF7_HUMAN	unreviewed	100 kDa coactivator (Fragment)		Homo sapiens (Human)	16
+
+</pre>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[6]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># SOLUTION - EXERCISE 01</span>
@@ -14551,10 +14683,63 @@ a.anchor-link {
 </div>
 </div>
 
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>Entry	Entry name	Status	Protein names	Gene names	Organism	Length
+A0A6I8THK6	A0A6I8THK6_AEDAE	unreviewed	Uncharacterized protein	5576237	Aedes aegypti (Yellowfever mosquito) (Culex aegypti)	9004
+A0A6I8TS24	A0A6I8TS24_AEDAE	unreviewed	Uncharacterized protein	5576237	Aedes aegypti (Yellowfever mosquito) (Culex aegypti)	9005
+A0A6I8TS57	A0A6I8TS57_AEDAE	unreviewed	Uncharacterized protein	5576237	Aedes aegypti (Yellowfever mosquito) (Culex aegypti)	9003
+A0A6I8TU04	A0A6I8TU04_AEDAE	unreviewed	Uncharacterized protein	5576237	Aedes aegypti (Yellowfever mosquito) (Culex aegypti)	9007
+A0A6I8TR55	A0A6I8TR55_AEDAE	unreviewed	Uncharacterized protein	5576237	Aedes aegypti (Yellowfever mosquito) (Culex aegypti)	9003
+A0A6I8TSG5	A0A6I8TSG5_AEDAE	unreviewed	Uncharacterized protein	5576237	Aedes aegypti (Yellowfever mosquito) (Culex aegypti)	9000
+A0A541B7M6	A0A541B7M6_9NOCA	unreviewed	Mycobactin synthetase protein B (Phenyloxazoline synthase MbtB)	FK531_14655	Rhodococcus sp. C9-5	9001
+A0A0Q9WY93	A0A0Q9WY93_DROVI	unreviewed	Uncharacterized protein, isoform J (Uncharacterized protein, isoform L)	Dvir\GJ15760 Dvir_GJ15760 GJ15760	Drosophila virilis (Fruit fly)	9003
+A0A1E7N8F6	A0A1E7N8F6_KITAU	unreviewed	Beta-ketoacyl synthase (Fragment)	HS99_0003795	Kitasatospora aureofaciens (Streptomyces aureofaciens)	9000
+A0A6G7V8D6	A0A6G7V8D6_RALSL	unreviewed	Hybrid non-ribosomal peptide synthetase/type I polyketide synthase	G7939_23095 G7969_23020	Ralstonia solanacearum (Pseudomonas solanacearum)	9008
+A0A4Q0ZTP5	A0A4Q0ZTP5_9PROT	unreviewed	Cadherin domain-containing protein	CRV01_06125	Arcobacter sp. CECT 8983	9003
+A0A0G4GJ59	A0A0G4GJ59_VITBC	unreviewed	Uncharacterized protein (Fragment)	Vbra_4545	Vitrella brassicaformis (strain CCMP3155)	9001
+A0A2P7PXJ0	A0A2P7PXJ0_9ACTN	unreviewed	Beta-ketoacyl synthase (Fragment)	B7P34_01725	Streptosporangium nondiastaticum	9004
+A0A0Q9XTA6	A0A0Q9XTA6_DROMO	unreviewed	Uncharacterized protein	Dmoj\GI14082 Dmoj_GI14082	Drosophila mojavensis (Fruit fly)	9002
+A0A0Q9WYB5	A0A0Q9WYB5_DROVI	unreviewed	Uncharacterized protein, isoform U	Dvir\GJ15760 Dvir_GJ15760 GJ15760	Drosophila virilis (Fruit fly)	9002
+A0A0Q9WLJ1	A0A0Q9WLJ1_DROVI	unreviewed	Uncharacterized protein, isoform W	Dvir\GJ15760 Dvir_GJ15760 GJ15760	Drosophila virilis (Fruit fly)	9000
+A0A6I8W397	A0A6I8W397_DROPS	unreviewed	twitchin isoform X8	LOC6899878	Drosophila pseudoobscura pseudoobscura (Fruit fly)	9010
+A0A1K0GG54	A0A1K0GG54_9ACTN	unreviewed	AceP4	BG844_00045	Couchioplanes caeruleus subsp. caeruleus	9002
+A0A4U5J8Z9	A0A4U5J8Z9_9EURY	unreviewed	Halomucin	DM868_13890	Natronomonas salsuginis	9006
+A0A3N1GDP3	A0A3N1GDP3_9ACTN	unreviewed	KS-AT-KR-ACP domain-containing polyene macrolide polyketide synthase/pimaricinolide synthase PimS2/candicidin polyketide synthase FscD	EDD30_1134	Couchioplanes caeruleus	9002
+A0A2P9C953	A0A2P9C953_9APIC	unreviewed	Uncharacterized protein	PADL01_1302600	Plasmodium sp. gorilla clade G2	9004
+A0A3B0KUH2	A0A3B0KUH2_DROGU	unreviewed	Blast:Twitchin	DGUA_6G019164	Drosophila guanche (Fruit fly)	9008
+A0A6J3C3I7	A0A6J3C3I7_GALME	unreviewed	twitchin isoform X19	LOC113519393	Galleria mellonella (Greater wax moth)	9007
+A0A4R8TS32	A0A4R8TS32_9PEZI	unreviewed	Putative cell agglutination protein	C8034_v004298	Colletotrichum sidae	9007
+A0A182NEA8	A0A182NEA8_9DIPT	unreviewed	Uncharacterized protein		Anopheles dirus	9010
+A0A0L0D1D3	A0A0L0D1D3_THETB	unreviewed	Uncharacterized protein	AMSG_00155	Thecamonas trahens ATCC 50062	9005
+A0A6P8HDE7	A0A6P8HDE7_ACTTE	unreviewed	nesprin-1-like isoform X2	LOC116288010	Actinia tenebrosa (Australian red waratah sea anemone)	9002
+A0A6M9L072	A0A6M9L072_RALSL	unreviewed	Hybrid non-ribosomal peptide synthetase/type I polyketide synthase	HI797_22640 HI798_22630 HI799_22630 HI800_22625 HI803_22640 HI804_22630 HI805_22625 HI806_22620	Ralstonia solanacearum (Pseudomonas solanacearum)	9004
+A0A6P9A299	A0A6P9A299_THRPL	unreviewed	LOW QUALITY PROTEIN: twitchin	LOC117651726	Thrips palmi (Melon thrips)	9004
+A0A6P8H4W4	A0A6P8H4W4_ACTTE	unreviewed	nesprin-1-like isoform X1	LOC116288010	Actinia tenebrosa (Australian red waratah sea anemone)	9003
+A0A6M9HP86	A0A6M9HP86_RALSL	unreviewed	Non-ribosomal peptide synthase/polyketide synthase	HI792_22670 HI808_20250 HI812_20245	Ralstonia solanacearum (Pseudomonas solanacearum)	9007
+
+</pre>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[7]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># SOLUTION - EXERCISE 01</span>
@@ -14568,10 +14753,210 @@ a.anchor-link {
 </div>
 </div>
 
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>Entry	Entry name	Status	Protein names	Gene names	Organism	Length
+P00614	PA2TA_OXYSC	reviewed	Basic phospholipase A2 taipoxin alpha chain (svPLA2) (EC 3.1.1.4) (Phosphatidylcholine 2-acylhydrolase)		Oxyuranus scutellatus scutellatus (Australian taipan) (Coastal taipan)	119
+Q45Z47	PA22_OXYSC	reviewed	Phospholipase A2 OS2 (PLA2) (EC 3.1.1.4) (Phosphatidylcholine 2-acylhydrolase)		Oxyuranus scutellatus scutellatus (Australian taipan) (Coastal taipan)	146
+P00615	PA2TB_OXYSC	reviewed	Neutral phospholipase A2 homolog taipoxin beta chain 1 (svPLA2 homolog)		Oxyuranus scutellatus scutellatus (Australian taipan) (Coastal taipan)	145
+P00616	PA2TG_OXYSC	reviewed	Acidic phospholipase A2 homolog taipoxin gamma chain (svPLA2 homolog)		Oxyuranus scutellatus scutellatus (Australian taipan) (Coastal taipan)	152
+B7S4N9	VKT_OXYSC	reviewed	Kunitz-type serine protease inhibitor taicotoxin (Taicatoxin, serine protease inhibitor component) (TCX) (TSPI) (Venom protease inhibitor 1) (Venom protease inhibitor 2)		Oxyuranus scutellatus scutellatus (Australian taipan) (Coastal taipan)	88
+Q58L96	FAXC_OXYSU	reviewed	Venom prothrombin activator oscutarin-C catalytic subunit (vPA) (EC 3.4.21.6) (Factor VII activator) (Snake venom serine protease) (SVSP) (Venom coagulation factor Xa-like protease) [Cleaved into: Oscutarin-C catalytic subunit light chain; Oscutarin-C catalytic subunit heavy chain]		Oxyuranus scutellatus (Coastal taipan)	467
+P0CG57	PA2TC_OXYSC	reviewed	Neutral phospholipase A2 homolog taipoxin beta chain 2 (svPLA2 homolog)		Oxyuranus scutellatus scutellatus (Australian taipan) (Coastal taipan)	118
+Q4VRI5	PA21_OXYSC	reviewed	Phospholipase A2 OS1 (PLA2) (EC 3.1.1.4) (OS5) (Phosphatidylcholine 2-acylhydrolase)		Oxyuranus scutellatus scutellatus (Australian taipan) (Coastal taipan)	154
+Q7LZG2	PA2T_OXYSC	reviewed	Phospholipase A2 taicatoxin (TCX) (svPLA2) (EC 3.1.1.4) (Phosphatidylcholine 2-acylhydrolase) (Fragment)		Oxyuranus scutellatus scutellatus (Australian taipan) (Coastal taipan)	27
+Q58L91	FA5V_OXYSU	reviewed	Venom prothrombin activator oscutarin-C non-catalytic subunit (vPA) (Venom coagulation factor Va-like protein) [Cleaved into: Oscutarin-C non-catalytic subunit heavy chain; Oscutarin-C non-catalytic subunit light chain]		Oxyuranus scutellatus (Coastal taipan)	1459
+P83228	VNPB_OXYSC	reviewed	Natriuretic peptide TNP-b (Taipan natriuretic peptide) (Venom natriuretic peptide OxsSNPb)		Oxyuranus scutellatus scutellatus (Australian taipan) (Coastal taipan)	111
+P0DKT7	PA2CA_OXYSA	reviewed	Basic phospholipase A2 cannitoxin alpha chain (svPLA2) (EC 3.1.1.4) (Phosphatidylcholine 2-acylhydrolase) (Fragment)		Oxyuranus scutellatus canni (Papuan taipan)	20
+Q58L95	FAXC_OXYMI	reviewed	Venom prothrombin activator omicarin-C catalytic subunit (vPA) (EC 3.4.21.6) (Venom coagulation factor Xa-like protease) [Cleaved into: Omicarin-C catalytic subunit light chain; Omicarin-C catalytic subunit heavy chain]		Oxyuranus microlepidotus (Inland taipan) (Diemenia microlepidota)	467
+Q45Z11	3S11_OXYSC	reviewed	Short neurotoxin 1 (SNTX-1) (Toxin 3)		Oxyuranus scutellatus scutellatus (Australian taipan) (Coastal taipan)	83
+Q45Z42	PA2PA_OXYMI	reviewed	Basic phospholipase A2 paradoxin-like alpha chain (svPLA2) (EC 3.1.1.4) (PLA-4) (Phosphatidylcholine 2-acylhydrolase)		Oxyuranus microlepidotus (Inland taipan) (Diemenia microlepidota)	146
+Q58L90	FA5V_OXYMI	reviewed	Venom prothrombin activator omicarin-C non-catalytic subunit (vPA) (Venom coagulation factor Va-like protein) [Cleaved into: Omicarin-C non-catalytic subunit heavy chain; Omicarin-C non-catalytic subunit light chain]		Oxyuranus microlepidotus (Inland taipan) (Diemenia microlepidota)	1460
+Q4JHE3	OXLA_OXYSC	reviewed	L-amino-acid oxidase (LAAO) (LAO) (EC 1.4.3.2)		Oxyuranus scutellatus scutellatus (Australian taipan) (Coastal taipan)	517
+P83225	VNPA_OXYSC	reviewed	Natriuretic peptide TNP-a (Taipan natriuretic peptide) (Venom natriuretic peptide OxsSNPa)		Oxyuranus scutellatus scutellatus (Australian taipan) (Coastal taipan)	35
+P0DKT9	PA2CC_OXYSA	reviewed	Neutral phospholipase A2 homolog cannitoxin beta chain 2 (svPLA2 homolog) (Fragment)		Oxyuranus scutellatus canni (Papuan taipan)	40
+P0CB06	3S12_OXYSC	reviewed	Short neurotoxin 2 (SNTX-2)		Oxyuranus scutellatus scutellatus (Australian taipan) (Coastal taipan)	62
+P0DKU0	PA2CG_OXYSA	reviewed	Acidic phospholipase A2 homolog cannitoxin gamma chain (svPLA2 homolog) (Fragment)		Oxyuranus scutellatus canni (Papuan taipan)	30
+P0CJ35	3L2L_OXYSC	reviewed	Taicatoxin, alpha-neurotoxin-like component (TCX, alpha-neurotoxin-like component) (Fragment)		Oxyuranus scutellatus scutellatus (Australian taipan) (Coastal taipan)	28
+Q45Z46	PA2PB_OXYMI	reviewed	Neutral phospholipase A2 paradoxin-like beta chain (svPLA2) (Beta paradoxin-like)		Oxyuranus microlepidotus (Inland taipan) (Diemenia microlepidota)	145
+P83952	WAPA_OXYMI	reviewed	Omwaprin-a (Omwaprin) (Oxywaprin-a)		Oxyuranus microlepidotus (Inland taipan) (Diemenia microlepidota)	50
+D2YVH7	LECM_OXYSU	reviewed	C-type lectin mannose-binding isoform (CTL) (Venom C-type lectin mannose-binding isoform 1)		Oxyuranus scutellatus (Coastal taipan)	158
+P83227	VNPB_OXYMI	reviewed	Natriuretic peptide TNP-b (Taipan natriuretic peptide) (Venom natriuretic peptide OxsSNPb)		Oxyuranus microlepidotus (Inland taipan) (Diemenia microlepidota)	35
+Q4QXK8	Q4QXK8_OXYSC	unreviewed	Carboxylate synthase (Fragment)		Oxyuranus scutellatus scutellatus (Australian taipan) (Coastal taipan)	214
+Q1H622	Q1H622_OXYSC	unreviewed	Cytochrome c oxidase subunit 1 (EC 7.1.1.9) (Fragment)		Oxyuranus scutellatus scutellatus (Australian taipan) (Coastal taipan)	247
+Q4VRH5	Q4VRH5_OXYSC	unreviewed	ILEI domain-containing protein		Oxyuranus scutellatus scutellatus (Australian taipan) (Coastal taipan)	158
+Q4VRH9	Q4VRH9_OXYSC	unreviewed	Protein disulfide-isomerase (EC 5.3.4.1)		Oxyuranus scutellatus scutellatus (Australian taipan) (Coastal taipan)	514
+Q4VRH2	Q4VRH2_OXYSC	unreviewed	PAM2 domain-containing protein		Oxyuranus scutellatus scutellatus (Australian taipan) (Coastal taipan)	124
+Q4VRI4	Q4VRI4_OXYSC	unreviewed	OS6		Oxyuranus scutellatus scutellatus (Australian taipan) (Coastal taipan)	146
+Q4VRH6	Q4VRH6_OXYSC	unreviewed	GOLD domain-containing protein		Oxyuranus scutellatus scutellatus (Australian taipan) (Coastal taipan)	136
+Q1H621	Q1H621_OXYSC	unreviewed	Cytochrome c oxidase subunit 2 (Fragment)		Oxyuranus scutellatus scutellatus (Australian taipan) (Coastal taipan)	222
+Q4QXL7	Q4QXL7_OXYSC	unreviewed	NADH-ubiquinone oxidoreductase chain 4L (EC 7.1.1.2) (Fragment)		Oxyuranus scutellatus scutellatus (Australian taipan) (Coastal taipan)	91
+Q4QXL3	Q4QXL3_OXYSC	unreviewed	Venom oncogene (Fragment)		Oxyuranus scutellatus scutellatus (Australian taipan) (Coastal taipan)	204
+Q4QXL5	Q4QXL5_OXYSC	unreviewed	HSP 90 (Fragment)		Oxyuranus scutellatus scutellatus (Australian taipan) (Coastal taipan)	468
+Q4VRH3	Q4VRH3_OXYSC	unreviewed	Lecithin retinol acyltransferase		Oxyuranus scutellatus scutellatus (Australian taipan) (Coastal taipan)	511
+Q4QXK7	Q4QXK7_OXYSC	unreviewed	Ribonuclease (EC 3.1.26.4) (Fragment)		Oxyuranus scutellatus scutellatus (Australian taipan) (Coastal taipan)	211
+Q64G15	Q64G15_OXYSC	unreviewed	G protein-binding protein (Fragment)		Oxyuranus scutellatus scutellatus (Australian taipan) (Coastal taipan)	199
+Q1H620	Q1H620_OXYSC	unreviewed	Cytochrome c oxidase subunit 3 (Fragment)		Oxyuranus scutellatus scutellatus (Australian taipan) (Coastal taipan)	221
+Q4VRH8	Q4VRH8_OXYSC	unreviewed	HSP70		Oxyuranus scutellatus scutellatus (Australian taipan) (Coastal taipan)	635
+Q64G13	Q64G13_OXYSC	unreviewed	Alpha actin (Fragment)		Oxyuranus scutellatus scutellatus (Australian taipan) (Coastal taipan)	225
+Q64G16	Q64G16_OXYSC	unreviewed	G protein-binding protein (Fragment)		Oxyuranus scutellatus scutellatus (Australian taipan) (Coastal taipan)	197
+Q4QXL4	Q4QXL4_OXYSC	unreviewed	EF1 (Fragment)		Oxyuranus scutellatus scutellatus (Australian taipan) (Coastal taipan)	111
+Q4QXL6	Q4QXL6_OXYSC	unreviewed	HSP 90 (Fragment)		Oxyuranus scutellatus scutellatus (Australian taipan) (Coastal taipan)	191
+Q64G12	Q64G12_OXYSC	unreviewed	Beta actin (Fragment)		Oxyuranus scutellatus scutellatus (Australian taipan) (Coastal taipan)	191
+Q4QXL2	Q4QXL2_OXYSC	unreviewed	Venom oncogene (Fragment)		Oxyuranus scutellatus scutellatus (Australian taipan) (Coastal taipan)	233
+Q4VRI3	Q4VRI3_OXYSC	unreviewed	OS7		Oxyuranus scutellatus scutellatus (Australian taipan) (Coastal taipan)	146
+Q64G14	Q64G14_OXYSC	unreviewed	Calglandulin		Oxyuranus scutellatus scutellatus (Australian taipan) (Coastal taipan)	172
+Q64G11	Q64G11_OXYSC	unreviewed	Dolichyl-diphosphooligosaccharide--protein glycosyltransferase subunit 1 (Fragment)		Oxyuranus scutellatus scutellatus (Australian taipan) (Coastal taipan)	201
+Q3SAY3	Q3SAY3_OXYSU	unreviewed	ATP synthase subunit e, mitochondrial (Fragment)		Oxyuranus scutellatus (Coastal taipan)	50
+Q38R58	Q38R58_OXYSU	unreviewed	NADH dehydrogenase subunit 4 (EC 7.1.1.2) (NADH-ubiquinone oxidoreductase chain 4) (Fragment)	ND4	Oxyuranus scutellatus (Coastal taipan)	214
+A8HDC4	A8HDC4_OXYSU	unreviewed	Cytochrome b (Fragment)		Oxyuranus scutellatus (Coastal taipan)	242
+B5KLB3	B5KLB3_OXYSU	unreviewed	Vespryn isoform 1		Oxyuranus scutellatus (Coastal taipan)	190
+Q3SAY1	Q3SAY1_OXYSU	unreviewed	SWI/SNF-related matrix-associated actin-dependent regulator of chromatin (Fragment)		Oxyuranus scutellatus (Coastal taipan)	149
+A0A0S2C759	A0A0S2C759_OXYSU	unreviewed	Complex III subunit 3 (Complex III subunit III) (Cytochrome b) (Cytochrome b-c1 complex subunit 3) (Ubiquinol-cytochrome-c reductase complex cytochrome b subunit) (Fragment)	cytb	Oxyuranus scutellatus (Coastal taipan)	198
+Q3SAY6	Q3SAY6_OXYSU	unreviewed	KIAA0731-like protein (Fragment)		Oxyuranus scutellatus (Coastal taipan)	127
+Q3SAZ2	Q3SAZ2_OXYSU	unreviewed	PolyA binding protein (Fragment)		Oxyuranus scutellatus (Coastal taipan)	306
+Q3SAZ5	Q3SAZ5_OXYSU	unreviewed	Mitochondrial protein L47-like protein (Fragment)		Oxyuranus scutellatus (Coastal taipan)	82
+Q3SAY8	Q3SAY8_OXYSU	unreviewed	DnaJ-like protein (Fragment)		Oxyuranus scutellatus (Coastal taipan)	148
+Q3SAY0	Q3SAY0_OXYSU	unreviewed	KIAA0853-like protein (Fragment)		Oxyuranus scutellatus (Coastal taipan)	186
+Q3SAZ0	Q3SAZ0_OXYSU	unreviewed	Adenine nucleotide translocator (Fragment)		Oxyuranus scutellatus (Coastal taipan)	148
+Q45Z53	Q45Z53_OXYSU	unreviewed	Beta taipoxin variant 1		Oxyuranus scutellatus (Coastal taipan)	145
+Q5MYC7	Q5MYC7_OXYSU	unreviewed	NADH dehydrogenase subunit 4 (EC 7.1.1.2) (NADH-ubiquinone oxidoreductase chain 4) (Fragment)	ND4	Oxyuranus scutellatus (Coastal taipan)	215
+Q3SAZ8	Q3SAZ8_OXYSU	unreviewed	40S ribosomal protein S18 (Fragment)		Oxyuranus scutellatus (Coastal taipan)	95
+B4YHF1	B4YHF1_OXYSU	unreviewed	C-mos (Fragment)		Oxyuranus scutellatus (Coastal taipan)	210
+Q4QXL0	Q4QXL0_OXYSC	unreviewed	Golgi-associated protein (Fragment)		Oxyuranus scutellatus scutellatus (Australian taipan) (Coastal taipan)	163
+Q4VRH7	Q4VRH7_OXYSC	unreviewed	Elongation factor 2		Oxyuranus scutellatus scutellatus (Australian taipan) (Coastal taipan)	406
+Q4VRI7	Q4VRI7_OXYSC	unreviewed	Alpha taipoxin-2		Oxyuranus scutellatus scutellatus (Australian taipan) (Coastal taipan)	146
+Q64G10	Q64G10_OXYSC	unreviewed	Dolichyl-diphosphooligosaccharide--protein glycosyltransferase subunit 1 (Ribophorin I) (Ribophorin-1) (Fragment)		Oxyuranus scutellatus scutellatus (Australian taipan) (Coastal taipan)	142
+Q4VRH1	Q4VRH1_OXYSC	unreviewed	Cytochrome c oxidase subunit IV		Oxyuranus scutellatus scutellatus (Australian taipan) (Coastal taipan)	170
+Q4QXK9	Q4QXK9_OXYSC	unreviewed	Carboxypeptidase (Fragment)		Oxyuranus scutellatus scutellatus (Australian taipan) (Coastal taipan)	238
+Q4VRH4	Q4VRH4_OXYSC	unreviewed	Trafficking protein particle complex subunit		Oxyuranus scutellatus scutellatus (Australian taipan) (Coastal taipan)	181
+K7RW47	K7RW47_OXYMI	unreviewed	Coagulation factor Xa (EC 3.4.21.6) (Fragment)		Oxyuranus microlepidotus (Inland taipan) (Diemenia microlepidota)	443
+D2YVL8	D2YVL8_OXYMI	unreviewed	Venom C-type lectin mannose binding isoform 3 variant 2		Oxyuranus microlepidotus (Inland taipan) (Diemenia microlepidota)	172
+Q9PTC8	Q9PTC8_OXYMI	unreviewed	Phospholipase A2 inhibitor		Oxyuranus microlepidotus (Inland taipan) (Diemenia microlepidota)	200
+Q9PRI2	Q9PRI2_OXYMI	unreviewed	Phospholipase A2 inhibitor		Oxyuranus microlepidotus (Inland taipan) (Diemenia microlepidota)	202
+Q45Z41	Q45Z41_OXYMI	unreviewed	PLA-5		Oxyuranus microlepidotus (Inland taipan) (Diemenia microlepidota)	146
+B5G6F6	B5G6F6_OXYMI	unreviewed	SNTX-1		Oxyuranus microlepidotus (Inland taipan) (Diemenia microlepidota)	83
+Q45Z43	Q45Z43_OXYMI	unreviewed	PLA-3		Oxyuranus microlepidotus (Inland taipan) (Diemenia microlepidota)	146
+D2YVL7	D2YVL7_OXYMI	unreviewed	Venom C-type lectin mannose binding isoform 3 variant 1		Oxyuranus microlepidotus (Inland taipan) (Diemenia microlepidota)	172
+B4YHJ4	B4YHJ4_OXYMI	unreviewed	Myosin heavy chain (Fragment)	MYH2	Oxyuranus microlepidotus (Inland taipan) (Diemenia microlepidota)	46
+D2YVJ0	D2YVJ0_OXYMI	unreviewed	Venom C-type lectin mannose binding isoform 1		Oxyuranus microlepidotus (Inland taipan) (Diemenia microlepidota)	158
+D2YVL6	D2YVL6_OXYMI	unreviewed	Venom C-type lectin mannose binding isoform 3 variant 3		Oxyuranus microlepidotus (Inland taipan) (Diemenia microlepidota)	172
+B5KFV6	B5KFV6_OXYMI	unreviewed	Microlepidotease-1		Oxyuranus microlepidotus (Inland taipan) (Diemenia microlepidota)	612
+Q45Z44	Q45Z44_OXYMI	unreviewed	PLA-2		Oxyuranus microlepidotus (Inland taipan) (Diemenia microlepidota)	146
+B2CAY2	B2CAY2_OXYMI	unreviewed	Oocyte maturation factor mos (Fragment)	c-mos	Oxyuranus microlepidotus (Inland taipan) (Diemenia microlepidota)	201
+Q9PTB9	Q9PTB9_OXYMI	unreviewed	Phospholipase A2 inhibitor		Oxyuranus microlepidotus (Inland taipan) (Diemenia microlepidota)	202
+Q45Z45	Q45Z45_OXYMI	unreviewed	PLA-1		Oxyuranus microlepidotus (Inland taipan) (Diemenia microlepidota)	154
+B5KL29	VKT3_OXYSC	reviewed	Kunitz-type serine protease inhibitor scutellin-3		Oxyuranus scutellatus scutellatus (Australian taipan) (Coastal taipan)	83
+Q6ITB4	VKT2_OXYMI	reviewed	Kunitz-type serine protease inhibitor microlepidin-2		Oxyuranus microlepidotus (Inland taipan) (Diemenia microlepidota)	83
+B5KL28	VKT4_OXYMI	reviewed	Kunitz-type serine protease inhibitor microlepidin-4		Oxyuranus microlepidotus (Inland taipan) (Diemenia microlepidota)	83
+Q6ITB7	VKT1_OXYSC	reviewed	Kunitz-type serine protease inhibitor scutellin-1		Oxyuranus scutellatus scutellatus (Australian taipan) (Coastal taipan)	83
+P83229	VNPB_OXYSA	reviewed	Natriuretic peptide TNP-b (Taipan natriuretic peptide) (Venom natriuretic peptide OxsSNPb)		Oxyuranus scutellatus canni (Papuan taipan)	35
+B5L5Q6	VKT5_OXYMI	reviewed	Kunitz-type serine protease inhibitor microlepidin-5		Oxyuranus microlepidotus (Inland taipan) (Diemenia microlepidota)	79
+B5L5M9	WAPC_OXYMI	reviewed	Omwaprin-c (Oxywaprin-c)		Oxyuranus microlepidotus (Inland taipan) (Diemenia microlepidota)	74
+Q6ITB5	VKT1_OXYMI	reviewed	Kunitz-type serine protease inhibitor microlepidin-1		Oxyuranus microlepidotus (Inland taipan) (Diemenia microlepidota)	83
+P83224	VNPA_OXYMI	reviewed	Natriuretic peptide TNP-a (Taipan natriuretic peptide) (Venom natriuretic peptide OxsSNPa)		Oxyuranus microlepidotus (Inland taipan) (Diemenia microlepidota)	35
+P83226	VNPA_OXYSA	reviewed	Natriuretic peptide TNP-a (Taipan natriuretic peptide) (Venom natriuretic peptide OxsSNPa)		Oxyuranus scutellatus canni (Papuan taipan)	35
+B5G6G7	WAPB_OXYMI	reviewed	Omwaprin-b (Oxywaprin-b)		Oxyuranus microlepidotus (Inland taipan) (Diemenia microlepidota)	74
+Q6ITB6	VKT2_OXYSC	reviewed	Kunitz-type serine protease inhibitor scutellin-2		Oxyuranus scutellatus scutellatus (Australian taipan) (Coastal taipan)	83
+B5KL30	VKT4_OXYSC	reviewed	Kunitz-type serine protease inhibitor scutellin-4		Oxyuranus scutellatus scutellatus (Australian taipan) (Coastal taipan)	83
+Q3SAF7	VNPE_OXYMI	reviewed	Natriuretic peptide OmNP-e (Fragment)		Oxyuranus microlepidotus (Inland taipan) (Diemenia microlepidota)	40
+P83230	VNPC_OXYMI	reviewed	Peptide TNP-c (Taipan natriuretic peptide) (Venom natriuretic peptide OxsSNPc)		Oxyuranus microlepidotus (Inland taipan) (Diemenia microlepidota)	39
+Q3SAF8	VNPD_OXYMI	reviewed	Natriuretic peptide OmNP-d (Fragment)		Oxyuranus microlepidotus (Inland taipan) (Diemenia microlepidota)	40
+P83231	VNPC_OXYSA	reviewed	Natriuretic peptide TNP-c (Taipan natriuretic peptide) (Venom natriuretic peptide OxsSNPc)		Oxyuranus scutellatus canni (Papuan taipan)	39
+Q3SAX8	VNPD_OXYSC	reviewed	Natriuretic peptide OsNP-d (Fragment)		Oxyuranus scutellatus scutellatus (Australian taipan) (Coastal taipan)	45
+B5G6G8	WAPA_OXYSC	reviewed	Scuwaprin-a		Oxyuranus scutellatus scutellatus (Australian taipan) (Coastal taipan)	75
+P0DJ63	VKT_OXYMI	reviewed	Kunitz-type serine protease inhibitor OMI (Fragment)		Oxyuranus microlepidotus (Inland taipan) (Diemenia microlepidota)	17
+B5KL27	VKT3_OXYMI	reviewed	Kunitz-type serine protease inhibitor microlepidin-3		Oxyuranus microlepidotus (Inland taipan) (Diemenia microlepidota)	83
+Q3I5F4	NGFV_OXYSC	reviewed	Venom nerve growth factor (v-NGF) (vNGF)		Oxyuranus scutellatus scutellatus (Australian taipan) (Coastal taipan)	243
+B5L5Q3	IVBS5_OXYSC	reviewed	Scutellin-5		Oxyuranus scutellatus scutellatus (Australian taipan) (Coastal taipan)	79
+Q3HXZ1	NGFV1_OXYMI	reviewed	Venom nerve growth factor 1 (v-NGF-1) (vNGF-1)		Oxyuranus microlepidotus (Inland taipan) (Diemenia microlepidota)	243
+P0DKT8	PA2CB_OXYSA	reviewed	Neutral phospholipase A2 homolog cannitoxin beta chain 1 (svPLA2 homolog) (Fragment)		Oxyuranus scutellatus canni (Papuan taipan)	10
+Q3HXZ0	NGFV2_OXYMI	reviewed	Venom nerve growth factor 2 (v-NGF-2) (vNGF-2)		Oxyuranus microlepidotus (Inland taipan) (Diemenia microlepidota)	243
+A5H9L3	A5H9L3_OXYSU	unreviewed	NADH dehydrogenase subunit 4 (EC 7.1.1.2) (NADH-ubiquinone oxidoreductase chain 4) (Fragment)	ND4	Oxyuranus scutellatus (Coastal taipan)	214
+Q38R62	Q38R62_OXYMI	unreviewed	NADH dehydrogenase subunit 4 (EC 7.1.1.2) (NADH-ubiquinone oxidoreductase chain 4) (Fragment)	ND4 NADH4	Oxyuranus microlepidotus (Inland taipan) (Diemenia microlepidota)	214
+A5H9L4	A5H9L4_OXYSU	unreviewed	NADH dehydrogenase subunit 4 (EC 7.1.1.2) (NADH-ubiquinone oxidoreductase chain 4) (Fragment)	ND4	Oxyuranus scutellatus (Coastal taipan)	214
+Q45Z49	Q45Z49_OXYSU	unreviewed	PLA-5		Oxyuranus scutellatus (Coastal taipan)	146
+Q3SAZ6	Q3SAZ6_OXYSU	unreviewed	Mitochondrial protein L12-like protein (Fragment)		Oxyuranus scutellatus (Coastal taipan)	92
+Q3SAY4	Q3SAY4_OXYSU	unreviewed	Neublin-like protein (Fragment)		Oxyuranus scutellatus (Coastal taipan)	291
+Q9PTC1	Q9PTC1_OXYSU	unreviewed	Phospholipase A2 inhibitor		Oxyuranus scutellatus (Coastal taipan)	202
+A6MJH2	A6MJH2_OXYSU	unreviewed	Dipeptidyl peptidase 4 (EC 3.4.14.5) (Dipeptidyl peptidase 4 membrane form) (Dipeptidyl peptidase 4 soluble form) (Dipeptidyl peptidase IV) (Dipeptidyl peptidase IV membrane form) (Dipeptidyl peptidase IV soluble form) (T-cell activation antigen CD26)		Oxyuranus scutellatus (Coastal taipan)	753
+Q3SAY5	Q3SAY5_OXYSU	unreviewed	Muscle-derived protein 77-like protein (Fragment)		Oxyuranus scutellatus (Coastal taipan)	177
+Q3SAX9	Q3SAX9_OXYSU	unreviewed	Translocation protein SEC63-like protein (Fragment)		Oxyuranus scutellatus (Coastal taipan)	309
+D2YVH8	D2YVH8_OXYSU	unreviewed	Venom C-type lectin mannose binding isoform 3		Oxyuranus scutellatus (Coastal taipan)	172
+Q3SAZ7	Q3SAZ7_OXYSU	unreviewed	40S ribosomal protein S20 (Fragment)		Oxyuranus scutellatus (Coastal taipan)	101
+A0A3S9IHK6	A0A3S9IHK6_OXYSU	unreviewed	NADH dehydrogenase subunit 4 (EC 7.1.1.2) (NADH-ubiquinone oxidoreductase chain 4) (Fragment)	ND4	Oxyuranus scutellatus (Coastal taipan)	217
+A0A6M8WN30	A0A6M8WN30_OXYSU	unreviewed	Short wavelength-sensitive opsin 1 (Fragment)	SWS1	Oxyuranus scutellatus (Coastal taipan)	79
+Q45Z48	Q45Z48_OXYSU	unreviewed	PLA-6		Oxyuranus scutellatus (Coastal taipan)	146
+Q3SAZ3	Q3SAZ3_OXYSU	unreviewed	Proteasome endopeptidase complex (EC 3.4.25.1) (Fragment)		Oxyuranus scutellatus (Coastal taipan)	174
+Q45Z51	Q45Z51_OXYSU	unreviewed	PLA-3		Oxyuranus scutellatus (Coastal taipan)	154
+Q3SAZ4	Q3SAZ4_OXYSU	unreviewed	Creatine kinase (EC 2.7.3.2) (Fragment)		Oxyuranus scutellatus (Coastal taipan)	165
+B5KFV5	B5KFV5_OXYSU	unreviewed	Scutellatease-1		Oxyuranus scutellatus (Coastal taipan)	612
+B4YHJ5	B4YHJ5_OXYSU	unreviewed	Myosin heavy chain (Fragment)	MYH2	Oxyuranus scutellatus (Coastal taipan)	37
+Q3SAY9	Q3SAY9_OXYSU	unreviewed	Adaptor-related protein complex delta subunit (Fragment)		Oxyuranus scutellatus (Coastal taipan)	150
+D2YVI0	D2YVI0_OXYSU	unreviewed	Venom C-type lectin mannose binding isoform 5 variant 2		Oxyuranus scutellatus (Coastal taipan)	157
+Q3SAY2	Q3SAY2_OXYSU	unreviewed	Pre-mRNA cleavage complex II protein-like protein (Fragment)		Oxyuranus scutellatus (Coastal taipan)	300
+Q78CF8	Q78CF8_OXYSU	unreviewed	Phospholipase A2 inhibitor		Oxyuranus scutellatus (Coastal taipan)	202
+Q3SB01	Q3SB01_OXYSU	unreviewed	60S ribosomal protein P1 (Fragment)		Oxyuranus scutellatus (Coastal taipan)	68
+Q3SAZ9	Q3SAZ9_OXYSU	unreviewed	40S ribosomal protein S8 (Fragment)		Oxyuranus scutellatus (Coastal taipan)	191
+Q5MYC8	Q5MYC8_OXYSU	unreviewed	Complex III subunit 3 (Complex III subunit III) (Cytochrome b) (Cytochrome b-c1 complex subunit 3) (Ubiquinol-cytochrome-c reductase complex cytochrome b subunit) (Fragment)	cytb	Oxyuranus scutellatus (Coastal taipan)	224
+Q3SAZ1	Q3SAZ1_OXYSU	unreviewed	Signal sequence receptor subunit delta (Translocon-associated protein subunit delta)		Oxyuranus scutellatus (Coastal taipan)	149
+Q9PTC9	Q9PTC9_OXYSU	unreviewed	Phospholipase A2 inhibitor		Oxyuranus scutellatus (Coastal taipan)	200
+Q3SAY7	Q3SAY7_OXYSU	unreviewed	Helix-loop-helix transcription factor-like protein (Fragment)		Oxyuranus scutellatus (Coastal taipan)	82
+D2YVI1	D2YVI1_OXYSU	unreviewed	Venom C-type lectin mannose binding isoform 4		Oxyuranus scutellatus (Coastal taipan)	165
+Q3SB00	Q3SB00_OXYSU	unreviewed	40S ribosomal protein S2 (Fragment)		Oxyuranus scutellatus (Coastal taipan)	253
+Q45Z50	Q45Z50_OXYSU	unreviewed	PLA-4		Oxyuranus scutellatus (Coastal taipan)	154
+Q3SB02	Q3SB02_OXYSU	unreviewed	60S ribosomal protein L13a (Fragment)		Oxyuranus scutellatus (Coastal taipan)	186
+B5KLB4	B5KLB4_OXYSU	unreviewed	Vespryn isoform 2		Oxyuranus scutellatus (Coastal taipan)	190
+D2YVH9	D2YVH9_OXYSU	unreviewed	Venom C-type lectin mannose binding isoform 5 variant 1		Oxyuranus scutellatus (Coastal taipan)	157
+A0A3S9IHJ7	A0A3S9IHJ7_OXYSU	unreviewed	Complex III subunit 3 (Complex III subunit III) (Cytochrome b) (Cytochrome b-c1 complex subunit 3) (Ubiquinol-cytochrome-c reductase complex cytochrome b subunit) (Fragment)	cyt b	Oxyuranus scutellatus (Coastal taipan)	129
+A7X4R0	3L2O2_OXYMI	reviewed	Long neurotoxin 3FTx-Oxy2		Oxyuranus microlepidotus (Inland taipan) (Diemenia microlepidota)	92
+A8HDK2	3SX3_OXYSC	reviewed	Short neurotoxin 3 (SNTX-3) (Three-finger toxin) (3FTx)		Oxyuranus scutellatus scutellatus (Australian taipan) (Coastal taipan)	79
+Q4VRI0	3SXS_OXYSC	reviewed	Scutelatoxin (Three-finger toxin) (3FTx)		Oxyuranus scutellatus scutellatus (Australian taipan) (Coastal taipan)	79
+A7X4Q3	3L2O1_OXYMI	reviewed	Long neurotoxin 3FTx-Oxy1		Oxyuranus microlepidotus (Inland taipan) (Diemenia microlepidota)	92
+A7X4R5	3S13_OXYMI	reviewed	Short neurotoxin 3FTx-Oxy3		Oxyuranus microlepidotus (Inland taipan) (Diemenia microlepidota)	83
+A7X4T2	3SX6_OXYMI	reviewed	Three-finger toxin 3FTx-Oxy6		Oxyuranus microlepidotus (Inland taipan) (Diemenia microlepidota)	81
+E3P6N6	CYT_OXYSC	reviewed	Cystatin		Oxyuranus scutellatus scutellatus (Australian taipan) (Coastal taipan)	141
+Q3SB14	CALGL_OXYMI	reviewed	Calglandulin		Oxyuranus microlepidotus (Inland taipan) (Diemenia microlepidota)	156
+A8HDK8	3L22_OXYMI	reviewed	Long neurotoxin 2 (LNTX-2)		Oxyuranus microlepidotus (Inland taipan) (Diemenia microlepidota)	92
+A7X4S0	3S14_OXYMI	reviewed	Short neurotoxin 3FTx-Oxy4		Oxyuranus microlepidotus (Inland taipan) (Diemenia microlepidota)	83
+Q3SB15	CALGL_OXYSC	reviewed	Calglandulin		Oxyuranus scutellatus scutellatus (Australian taipan) (Coastal taipan)	156
+E3P6N5	CYT_OXYMI	reviewed	Cystatin		Oxyuranus microlepidotus (Inland taipan) (Diemenia microlepidota)	141
+A8HDK7	3L21_OXYMI	reviewed	Long neurotoxin 1 (LNTX-1)		Oxyuranus microlepidotus (Inland taipan) (Diemenia microlepidota)	92
+Q3SB07	CRVP_OXYSC	reviewed	Cysteine-rich venom protein pseudechetoxin-like (CRVP)		Oxyuranus scutellatus scutellatus (Australian taipan) (Coastal taipan)	238
+Q3SB06	CRVP_OXYMI	reviewed	Cysteine-rich venom protein pseudechetoxin-like (CRVP) (Cysteine-rich secretory protein OXY1) (CRISP-OXY1)		Oxyuranus microlepidotus (Inland taipan) (Diemenia microlepidota)	238
+A7X4S7	3SX5_OXYMI	reviewed	Toxin 3FTx-Oxy5 (Three-finger toxin) (3FTx)		Oxyuranus microlepidotus (Inland taipan) (Diemenia microlepidota)	79
+A8HDK9	3L21_OXYSC	reviewed	Long neurotoxin 1 (LNTX-1)		Oxyuranus scutellatus scutellatus (Australian taipan) (Coastal taipan)	92
+Q4QXL1	Q4QXL1_OXYSC	unreviewed	Ca ATPase (Fragment)		Oxyuranus scutellatus scutellatus (Australian taipan) (Coastal taipan)	123
+Q7LZG4	Q7LZG4_OXYSC	unreviewed	Phospholipase A2 OS2 (EC 3.1.1.4) (Fragment)		Oxyuranus scutellatus scutellatus (Australian taipan) (Coastal taipan)	26
+Q38R61	Q38R61_OXYMI	unreviewed	NADH dehydrogenase subunit 4 (EC 7.1.1.2) (NADH-ubiquinone oxidoreductase chain 4) (Fragment)	ND4	Oxyuranus microlepidotus (Inland taipan) (Diemenia microlepidota)	214
+Q38R59	Q38R59_OXYSU	unreviewed	NADH dehydrogenase subunit 4 (EC 7.1.1.2) (NADH-ubiquinone oxidoreductase chain 4) (Fragment)	ND4	Oxyuranus scutellatus (Coastal taipan)	214
+A6MJH3	A6MJH3_OXYMI	unreviewed	Dipeptidyl peptidase 4 (EC 3.4.14.5) (Dipeptidyl peptidase 4 membrane form) (Dipeptidyl peptidase 4 soluble form) (Dipeptidyl peptidase IV) (Dipeptidyl peptidase IV membrane form) (Dipeptidyl peptidase IV soluble form) (T-cell activation antigen CD26)		Oxyuranus microlepidotus (Inland taipan) (Diemenia microlepidota)	753
+Q9PTC7	Q9PTC7_OXYMI	unreviewed	Phospholipase A2 inhibitor		Oxyuranus microlepidotus (Inland taipan) (Diemenia microlepidota)	201
+I6LJ72	I6LJ72_OXYMI	unreviewed	C-type lectin mannose binding isoform 5 variant 2		Oxyuranus microlepidotus (Inland taipan) (Diemenia microlepidota)	157
+I6LJ71	I6LJ71_OXYMI	unreviewed	C-type lectin mannose binding isoform 5 variant 1		Oxyuranus microlepidotus (Inland taipan) (Diemenia microlepidota)	157
+
+</pre>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[8]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># SOLUTION - EXERCISE 01</span>
@@ -14583,6 +14968,132 @@ a.anchor-link {
      </div>
 </div>
 </div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>Entry	Entry name	Status	Protein names	Gene names	Organism	Length
+Q26366	VG_DROME	reviewed	Protein vestigial	vg CG3830	Drosophila melanogaster (Fruit fly)	453
+Q9NBK5	TRC_DROME	reviewed	Serine/threonine-protein kinase tricornered (EC 2.7.11.1) (NDR protein kinase) (Serine/threonine-protein kinase 38-like) (Serine/threonine-protein kinase tricorner)	trc CG8637	Drosophila melanogaster (Fruit fly)	463
+Q9V9J3	SRC42_DROME	reviewed	Tyrosine-protein kinase Src42A (EC 2.7.10.2) (Tyrosine-protein kinase Src41) (Dsrc41)	Src42A Src41 TK5 CG44128	Drosophila melanogaster (Fruit fly)	517
+Q9VMD9	TIG_DROME	reviewed	Tiggrin	Tig CG11527	Drosophila melanogaster (Fruit fly)	2188
+P22265	TSH_DROME	reviewed	Protein teashirt	tsh CG1374	Drosophila melanogaster (Fruit fly)	954
+P30052	SCAL_DROME	reviewed	Protein scalloped	sd CG8544	Drosophila melanogaster (Fruit fly)	440
+Q9VT04	PATH_DROME	reviewed	Proton-coupled amino acid transporter-like protein pathetic	path CG3424	Drosophila melanogaster (Fruit fly)	471
+Q95ST2	WLS_DROME	reviewed	Protein wntless (Evenness interrupted) (Sprinter)	wls evi srt CG6210	Drosophila melanogaster (Fruit fly)	594
+Q9VU68	WDR1_DROME	reviewed	Actin-interacting protein 1 (AIP1) (Protein flare)	flr CG10724	Drosophila melanogaster (Fruit fly)	608
+A8JUV0	SBNO_DROME	reviewed	Protein strawberry notch	sno CG44436	Drosophila melanogaster (Fruit fly)	1653
+O44783	SPY_DROME	reviewed	Protein sprouty (Spry)	sty CG1921	Drosophila melanogaster (Fruit fly)	589
+Q9XZL8	SRA_DROME	reviewed	Protein sarah (Protein nebula)	sra nla CG6072	Drosophila melanogaster (Fruit fly)	292
+Q01070	ESMC_DROME	reviewed	Enhancer of split mgamma protein (E(spl)mgamma) (Split locus enhancer protein mB)	E(spl)mgamma-HLH HLHmgamma CG8333	Drosophila melanogaster (Fruit fly)	205
+P07713	DECA_DROME	reviewed	Protein decapentaplegic (Protein DPP-C)	dpp CG9885	Drosophila melanogaster (Fruit fly)	588
+Q8IN94	OSA_DROME	reviewed	Trithorax group protein osa (Protein eyelid)	osa eld CG7467	Drosophila melanogaster (Fruit fly)	2716
+P53624	MA1A1_DROME	reviewed	Mannosyl-oligosaccharide alpha-1,2-mannosidase IA (EC 3.2.1.113) (Man(9)-alpha-mannosidase) (Mannosidase-1)	alpha-Man-Ia alpha-man-1 mas-1 CG32684	Drosophila melanogaster (Fruit fly)	667
+Q6WV17	GALT5_DROME	reviewed	Polypeptide N-acetylgalactosaminyltransferase 5 (pp-GaNTase 5) (EC 2.4.1.41) (Protein-UDP acetylgalactosaminyltransferase 5) (UDP-GalNAc:polypeptide N-acetylgalactosaminyltransferase 5)	Pgant5 CG31651	Drosophila melanogaster (Fruit fly)	630
+Q8MVS5	GLT35_DROME	reviewed	Polypeptide N-acetylgalactosaminyltransferase 35A (EC 2.4.1.41) (Protein l(2)35Aa) (Protein-UDP acetylgalactosaminyltransferase 35A) (UDP-GalNAc:polypeptide N-acetylgalactosaminyltransferase 35A) (pp-GaNTase 35A) (dGalNAc-T1)	Pgant35A CG7480	Drosophila melanogaster (Fruit fly)	632
+O46339	HTH_DROME	reviewed	Homeobox protein homothorax (Homeobox protein dorsotonals)	hth dtl CG17117	Drosophila melanogaster (Fruit fly)	487
+Q7KHG2	JING_DROME	reviewed	Zinc finger protein jing (Zinc finger protein rhumba)	jing rhumba CG9397 CG9403	Drosophila melanogaster (Fruit fly)	1486
+Q6WV19	GALT2_DROME	reviewed	Polypeptide N-acetylgalactosaminyltransferase 2 (pp-GaNTase 2) (EC 2.4.1.41) (Protein-UDP acetylgalactosaminyltransferase 2) (UDP-GalNAc:polypeptide N-acetylgalactosaminyltransferase 2)	Pgant2 CG3254	Drosophila melanogaster (Fruit fly)	633
+P25932	ESCA_DROME	reviewed	Protein escargot (Protein fleabag)	esg flg CG3758	Drosophila melanogaster (Fruit fly)	470
+Q24247	ITA1_DROME	reviewed	Integrin alpha-PS1 (Position-specific antigen subunit alpha-1) (Protein multiple edematous wings) [Cleaved into: Integrin alpha-PS1 heavy chain; Integrin alpha-PS1 light chain]	mew CG1771	Drosophila melanogaster (Fruit fly)	1146
+Q9VFG8	KIBRA_DROME	reviewed	Protein kibra	kibra CG33967	Drosophila melanogaster (Fruit fly)	1288
+Q8MV48	GALT7_DROME	reviewed	N-acetylgalactosaminyltransferase 7 (EC 2.4.1.41) (Protein-UDP acetylgalactosaminyltransferase 7) (UDP-GalNAc:polypeptide N-acetylgalactosaminyltransferase 7) (pp-GaNTase 7) (dGalNAc-T2)	Pgant7 GalNAc-T2 CG6394	Drosophila melanogaster (Fruit fly)	591
+Q27934	PHYL_DROME	reviewed	Protein phyllopod	phyl CG10108	Drosophila melanogaster (Fruit fly)	400
+Q9VWB9	THADA_DROME	reviewed	Thyroid adenoma-associated protein homolog	THADA CG15618	Drosophila melanogaster (Fruit fly)	1746
+Q9V6U8	UBA3_DROME	reviewed	Nedd8-activating enzyme E1 catalytic subunit (EC 6.2.1.64) (Ubiquitin-activating enzyme 3 homolog)	Uba3 CG13343	Drosophila melanogaster (Fruit fly)	450
+Q9VSF3	UBC2M_DROME	reviewed	Nedd8-conjugating enzyme UbcE2M (EC 2.3.2.34) (Nedd8 carrier protein)	UbcE2M Ubc12 CG7375	Drosophila melanogaster (Fruit fly)	181
+Q9W3W5	WIF1_DROME	reviewed	Protein shifted (WIF-1-like protein)	shf CG3135	Drosophila melanogaster (Fruit fly)	456
+Q9GPH8	SNMP2_MANSE	reviewed	Sensory neuron membrane protein 2 (SNMP2-Msex)		Manduca sexta (Tobacco hawkmoth) (Tobacco hornworm)	519
+Q9V3I8	OGG1_DROME	reviewed	N-glycosylase/DNA lyase (dOgg1) [Includes: 8-oxoguanine DNA glycosylase (EC 3.2.2.-); DNA-(apurinic or apyrimidinic site) lyase (AP lyase) (EC 4.2.99.18)]	Ogg1 CG1795	Drosophila melanogaster (Fruit fly)	343
+Q9VP04	ORMDL_DROME	reviewed	ORM1-like protein (dORMDL)	ORMDL CG14577	Drosophila melanogaster (Fruit fly)	154
+Q9W436	NEP_DROME	reviewed	Neprilysin-1 (EC 3.4.24.11)	Nep1 CG5905	Drosophila melanogaster (Fruit fly)	849
+Q8SY61	OB56D_DROME	reviewed	General odorant-binding protein 56d	Obp56d CG11218	Drosophila melanogaster (Fruit fly)	131
+O16867	TAP_DROME	reviewed	Basic helix-loop-helix neural transcription factor TAP (Protein biparous) (Target of Poxn protein)	tap bps CG7659	Drosophila melanogaster (Fruit fly)	398
+Q9GPH7	SNMP1_MANSE	reviewed	Sensory neuron membrane protein 1 (SNMP1-Msex)		Manduca sexta (Tobacco hawkmoth) (Tobacco hornworm)	523
+Q9W3Y4	GA2PE_DROME	reviewed	GAS2-like protein pickled eggs	pigs CG3973	Drosophila melanogaster (Fruit fly)	977
+Q9VR82	INX6_DROME	reviewed	Innexin inx6 (Innexin-6) (Gap junction protein prp6) (Pas-related protein 6)	Inx6 prp6 CG17063	Drosophila melanogaster (Fruit fly)	481
+Q9V8Y9	OB56H_DROME	reviewed	General odorant-binding protein 56h	Obp56h CG13874	Drosophila melanogaster (Fruit fly)	134
+P58959	G39AD_DROME	reviewed	Gustatory and pheromone receptor 39a, isoform A	Gr39a GR39D.2 CG31622	Drosophila melanogaster (Fruit fly)	371
+P16912	KAPC3_DROME	reviewed	cAMP-dependent protein kinase catalytic subunit 3 (EC 2.7.11.1) (Protein kinase DC2)	Pka-C3 DC2 CG6117	Drosophila melanogaster (Fruit fly)	583
+Q9XZ14	GOE_DROME	reviewed	Protein gone early	goe CG9634	Drosophila melanogaster (Fruit fly)	879
+O77438	FRIZ3_DROME	reviewed	Frizzled-3 (dFz3)	fz3 CG16785	Drosophila melanogaster (Fruit fly)	581
+Q9VWL5	INX5_DROME	reviewed	Innexin inx5	Inx5 CG7537	Drosophila melanogaster (Fruit fly)	419
+Q9W1N5	GR59F_DROME	reviewed	Putative gustatory receptor 59f	Gr59f GR59E.1 CG33150	Drosophila melanogaster (Fruit fly)	406
+Q9V8Y2	OB56A_DROME	reviewed	General odorant-binding protein 56a	Obp56a CG11797	Drosophila melanogaster (Fruit fly)	139
+A1Z6W3	PRIC1_DROME	reviewed	Protein prickle (Protein spiny legs)	pk CG11084	Drosophila melanogaster (Fruit fly)	1299
+Q9VFP2	RDX_DROME	reviewed	Protein roadkill (Hh-induced MATH and BTB domain-containing protein)	rdx HIB CG12537	Drosophila melanogaster (Fruit fly)	829
+Q9V5N8	STAN_DROME	reviewed	Protocadherin-like wing polarity protein stan (Protein flamingo) (Protein starry night)	stan fmi CG11895	Drosophila melanogaster (Fruit fly)	3579
+Q9V3Z6	MYO7A_DROME	reviewed	Myosin-VIIa (DmVIIa) (Protein crinkled)	ck CG7595	Drosophila melanogaster (Fruit fly)	2167
+Q59E55	NAB_DROME	reviewed	NGFI-A-binding protein homolog (dNAB)	nab CG33545	Drosophila melanogaster (Fruit fly)	625
+Q9VUX2	MIB_DROME	reviewed	E3 ubiquitin-protein ligase mind-bomb (EC 2.3.2.27) (Mind bomb homolog) (D-mib) (RING-type E3 ubiquitin transferase mind-bomb)	mib1 mind-bomb CG5841	Drosophila melanogaster (Fruit fly)	1226
+Q9VL84	PPK11_DROME	reviewed	Pickpocket protein 11 (PPK11)	ppk11 CG34058 CG4110	Drosophila melanogaster (Fruit fly)	516
+Q24535	SRF_DROME	reviewed	Serum response factor homolog (dSRF) (Protein blistered)	bs Serf CG3411	Drosophila melanogaster (Fruit fly)	449
+Q8SXX4	CAPON_DROME	reviewed	Capon-like protein	CG42673	Drosophila melanogaster (Fruit fly)	698
+Q9VKJ9	C2D1_DROME	reviewed	Coiled-coil and C2 domain-containing protein 1-like (Lethal giant disks protein)	l(2)gd1 lgd CG4713	Drosophila melanogaster (Fruit fly)	816
+Q9VGW1	CAD86_DROME	reviewed	Cadherin-86C	Cad86C CG4509	Drosophila melanogaster (Fruit fly)	1943
+Q9VYB0	BTHD_DROME	reviewed	Selenoprotein BthD (dSelM)	BthD CG11177	Drosophila melanogaster (Fruit fly)	249
+Q8IA42	GALT4_DROME	reviewed	N-acetylgalactosaminyltransferase 4 (EC 2.4.1.41) (Protein-UDP acetylgalactosaminyltransferase 4) (UDP-GalNAc:polypeptide N-acetylgalactosaminyltransferase 4) (pp-GaNTase 4)	Pgant4 CG31956	Drosophila melanogaster (Fruit fly)	644
+Q9V427	INX2_DROME	reviewed	Innexin inx2 (Innexin-2) (Gap junction protein prp33) (Pas-related protein 33)	Inx2 prp33 CG4590	Drosophila melanogaster (Fruit fly)	367
+P12080	ITA2_DROME	reviewed	Integrin alpha-PS2 (Position-specific antigen subunit alpha-2) (Protein inflated) [Cleaved into: Integrin alpha-PS2 heavy chain; Integrin alpha-PS2 light chain]	if CG9623	Drosophila melanogaster (Fruit fly)	1396
+P04412	EGFR_DROME	reviewed	Epidermal growth factor receptor (Egfr) (EC 2.7.10.1) (Drosophila relative of ERBB) (Gurken receptor) (Protein torpedo)	Egfr c-erbB DER top CG10079	Drosophila melanogaster (Fruit fly)	1426
+Q9VAS7	INX3_DROME	reviewed	Innexin inx3 (Innexin-3)	Inx3 CG1448	Drosophila melanogaster (Fruit fly)	395
+P58953	GR22E_DROME	reviewed	Gustatory receptor for bitter taste 22e	Gr22e CG31936	Drosophila melanogaster (Fruit fly)	389
+Q9Y117	GALT3_DROME	reviewed	Polypeptide N-acetylgalactosaminyltransferase 3 (pp-GaNTase 3) (EC 2.4.1.41) (Protein-UDP acetylgalactosaminyltransferase 3) (UDP-GalNAc:polypeptide N-acetylgalactosaminyltransferase 3)	Pgant3 CG4445	Drosophila melanogaster (Fruit fly)	667
+P54360	FOJO_DROME	reviewed	Extracellular serine/threonine protein kinase four-jointed (EC 2.7.11.1) [Cleaved into: Protein four-jointed, secreted isoform]	fj CG10917	Drosophila melanogaster (Fruit fly)	583
+Q9V730	EXT1_DROME	reviewed	Exostosin-1 (EC 2.4.1.224) (EC 2.4.1.225) (Protein tout-velu)	ttv DEXT1 CG10117	Drosophila melanogaster (Fruit fly)	760
+Q9Y169	EXT2_DROME	reviewed	Exostosin-2 (EC 2.4.1.224) (EC 2.4.1.225) (Protein sister of tout-velu)	sotv Ext2 CG33038	Drosophila melanogaster (Fruit fly)	717
+Q9U1H0	CIC_DROME	reviewed	Putative transcription factor capicua (Protein fettucine)	cic fet CG43122	Drosophila melanogaster (Fruit fly)	1832
+P23647	FUSED_DROME	reviewed	Serine/threonine-protein kinase fused (EC 2.7.11.1)	fu CG6551	Drosophila melanogaster (Fruit fly)	805
+P92208	JNK_DROME	reviewed	Stress-activated protein kinase JNK (dJNK) (EC 2.7.11.24) (Protein basket)	bsk JNK CG5680	Drosophila melanogaster (Fruit fly)	372
+Q9VRX6	INX4_DROME	reviewed	Innexin inx4 (Innexin-4) (Protein zero population growth)	zpg inx4 CG10125	Drosophila melanogaster (Fruit fly)	367
+Q9VM09	GR28A_DROME	reviewed	Putative gustatory receptor 28a	Gr28a CG13787	Drosophila melanogaster (Fruit fly)	450
+Q86S05	LIG_DROME	reviewed	Protein lingerer	lig CG8715	Drosophila melanogaster (Fruit fly)	1375
+Q76KB1	HS2ST_CHICK	reviewed	Heparan sulfate 2-O-sulfotransferase 1 (cHS2ST) (EC 2.8.2.-)	HS2ST1 HS2ST	Gallus gallus (Chicken)	356
+P27716	INX1_DROME	reviewed	Innexin inx1 (Innexin-1) (Protein optic ganglion reduced) (Protein ogre)	ogre inx1 l(1)ogre CG3039	Drosophila melanogaster (Fruit fly)	362
+Q8IR79	LIMK1_DROME	reviewed	LIM domain kinase 1 (LIMK-1) (EC 2.7.11.1) (dLIMK)	LIMK1 LIMK CG1848	Drosophila melanogaster (Fruit fly)	1257
+Q9V4K2	GR43A_DROME	reviewed	Gustatory receptor for sugar taste 43a	Gr43a GR43.1 CG1712	Drosophila melanogaster (Fruit fly)	427
+Q02936	HH_DROME	reviewed	Protein hedgehog [Cleaved into: Protein hedgehog N-product (Hh-Np) (N-Hh); Protein hedgehog C-product (Hh-Cp) (C-Hh)]	hh CG4637	Drosophila melanogaster (Fruit fly)	471
+P11584	ITBX_DROME	reviewed	Integrin beta-PS (Position-specific antigen beta subunit) (Protein myospheroid) (Protein olfactory C)	mys l(1)mys olfC CG1560	Drosophila melanogaster (Fruit fly)	846
+Q9VM08	GR28B_DROME	reviewed	Putative gustatory receptor 28b	Gr28b CG13788	Drosophila melanogaster (Fruit fly)	470
+Q00805	GIL_DROME	reviewed	Protein giant-lens (Protein argos) (Protein strawberry)	aos gil sty CG4531	Drosophila melanogaster (Fruit fly)	444
+Q9XZ08	EXT3_DROME	reviewed	Exostosin-3 (EC 2.4.1.223) (Protein brother of tout-velu)	botv DEXT3 CG15110	Drosophila melanogaster (Fruit fly)	972
+Q6WV20	GALT1_DROME	reviewed	Polypeptide N-acetylgalactosaminyltransferase 1 (pp-GaNTase 1) (EC 2.4.1.41) (Protein-UDP acetylgalactosaminyltransferase 1) (UDP-GalNAc:polypeptide N-acetylgalactosaminyltransferase 1)	Pgant1 GalNAc-T1 CG8182	Drosophila melanogaster (Fruit fly)	601
+P27091	60A_DROME	reviewed	Protein 60A (Protein glass bottom boat)	gbb 60A gbb-60A TGFb-60A CG5562	Drosophila melanogaster (Fruit fly)	455
+Q6WV16	GALT6_DROME	reviewed	N-acetylgalactosaminyltransferase 6 (EC 2.4.1.41) (Protein-UDP acetylgalactosaminyltransferase 6) (UDP-GalNAc:polypeptide N-acetylgalactosaminyltransferase 6) (pp-GaNTase 6)	Pgant6 CG2103	Drosophila melanogaster (Fruit fly)	666
+P20009	DLL_DROME	reviewed	Homeotic protein distal-less (Protein brista)	Dll Ba BR CG3629	Drosophila melanogaster (Fruit fly)	327
+P54385	DHE3_DROME	reviewed	Glutamate dehydrogenase, mitochondrial (GDH) (EC 1.4.1.3)	Gdh Glud CG5320	Drosophila melanogaster (Fruit fly)	562
+P32866	GPRK2_DROME	reviewed	G protein-coupled receptor kinase 2 (EC 2.7.11.16)	Gprk2 Gprk-2 CG17998	Drosophila melanogaster (Fruit fly)	714
+Q7YU81	CHN_DROME	reviewed	Protein charlatan	chn CG11798	Drosophila melanogaster (Fruit fly)	1214
+Q8I0G5	COPG_DROME	reviewed	Coatomer subunit gamma (Gamma-coat protein) (Gamma-COP)	gammaCOP copg gamma-Cop CG1528	Drosophila melanogaster (Fruit fly)	883
+Q9VBW6	DAN_DROME	reviewed	Protein distal antenna	dan CG11849	Drosophila melanogaster (Fruit fly)	678
+Q17423	CREC_CAEEL	reviewed	Crescerin-like protein che-12	che-12 B0024.8	Caenorhabditis elegans	1282
+P49883	ECR_MANSE	reviewed	Ecdysone receptor (20-hydroxy-ecdysone receptor) (20E receptor) (EcRH) (Ecdysteroid receptor) (Nuclear receptor subfamily 1 group H member 1)	EcR NR1H1	Manduca sexta (Tobacco hawkmoth) (Tobacco hornworm)	556
+Q9VVW5	DUSK3_DROME	reviewed	Dual specificity protein phosphatase Mpk3 (EC 3.1.3.16) (EC 3.1.3.48) (Drosophila MKP3) (DMKP3) (Mitogen-activated protein kinase phosphatase 3) (MAP kinase phosphatase 3) (MKP-3)	Mkp3 CG14080	Drosophila melanogaster (Fruit fly)	411
+Q8IA43	GLT10_DROME	reviewed	Putative polypeptide N-acetylgalactosaminyltransferase 10 (pp-GaNTase 10) (EC 2.4.1.41) (Protein-UDP acetylgalactosaminyltransferase 10) (UDP-GalNAc:polypeptide N-acetylgalactosaminyltransferase 10)	pgant10 CG31776	Drosophila melanogaster (Fruit fly)	630
+Q8IRC7	AWH_DROME	reviewed	LIM/homeobox protein Awh (Protein arrowhead)	Awh CG1072	Drosophila melanogaster (Fruit fly)	275
+P80686	CUH1C_TENMO	reviewed	Larval/pupal cuticle protein H1C (TM-PCP H1C) (TM-H1C) (TMLPCP-22)	LPCP-22	Tenebrio molitor (Yellow mealworm beetle)	211
+Q9VCR3	COW_DROME	reviewed	Proteoglycan Cow (Carrier of wingless) (Carrier of wg)	Cow CG13830	Drosophila melanogaster (Fruit fly)	629
+P45590	CU66_HYACE	reviewed	Larval/pupal rigid cuticle protein 66 (HCCP66)	CP66	Hyalophora cecropia (Cecropia moth)	129
+Q9VI93	RN_DROME	reviewed	Zinc finger protein rotund (Zinc finger protein roughened eye)	rn roe CG32466	Drosophila melanogaster (Fruit fly)	946
+O18334	RAB6_DROME	reviewed	Ras-related protein Rab6 (Protein warthog)	Rab6 wrt CG6601	Drosophila melanogaster (Fruit fly)	208
+Q9VAJ3	PPK19_DROME	reviewed	Pickpocket protein 19 (PPK19)	ppk19 CG18287	Drosophila melanogaster (Fruit fly)	511
+
+</pre>
+</div>
+</div>
+
+</div>
+
 </div>
 
 </div>
@@ -14598,10 +15109,10 @@ a.anchor-link {
 <p>will search for all entries deriving from rabbits that are found in the eye</p>
 
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[9]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Combine queries for rabbit (organism) and eye (tissue), and search</span>
@@ -14613,6 +15124,44 @@ a.anchor-link {
      </div>
 </div>
 </div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>Entry	Entry name	Status	Protein names	Gene names	Organism	Length
+Q866N2	MYOC_RABIT	reviewed	Myocilin (Trabecular meshwork-induced glucocorticoid response protein) [Cleaved into: Myocilin, N-terminal fragment (Myocilin 20 kDa N-terminal fragment); Myocilin, C-terminal fragment (Myocilin 35 kDa N-terminal fragment)]	MYOC TIGR	Oryctolagus cuniculus (Rabbit)	490
+P41316	CRYAB_RABIT	reviewed	Alpha-crystallin B chain (Alpha(B)-crystallin)	CRYAB	Oryctolagus cuniculus (Rabbit)	175
+P14755	CRYL1_RABIT	reviewed	Lambda-crystallin (EC 1.1.1.45) (L-gulonate 3-dehydrogenase) (Gul3DH)	CRYL1 GUL3DH	Oryctolagus cuniculus (Rabbit)	319
+A4L9J0	MIP_RABIT	reviewed	Lens fiber major intrinsic protein (Aquaporin-0)	MIP	Oryctolagus cuniculus (Rabbit)	263
+Q9TV70	DHDH_RABIT	reviewed	Trans-1,2-dihydrobenzene-1,2-diol dehydrogenase (EC 1.3.1.20) (D-xylose 1-dehydrogenase) (D-xylose-NADP dehydrogenase) (EC 1.1.1.179) (Dimeric dihydrodiol dehydrogenase) (Ory2DD) (Fragment)	DHDH 2DD	Oryctolagus cuniculus (Rabbit)	329
+P55820	SNP25_RABIT	reviewed	Synaptosomal-associated protein 25 (SNAP-25) (Super protein) (SUP) (Synaptosomal-associated 25 kDa protein) (Fragments)	SNAP25 SNAP	Oryctolagus cuniculus (Rabbit)	54
+P02493	CRYAA_RABIT	reviewed	Alpha-crystallin A chain	CRYAA	Oryctolagus cuniculus (Rabbit)	173
+A2IBH5	CRBB2_RABIT	reviewed	Beta-crystallin B2 (Beta-B2 crystallin) (Beta-crystallin Bp)	CRYBB2	Oryctolagus cuniculus (Rabbit)	205
+A4L9I8	CRYGS_RABIT	reviewed	Gamma-crystallin S (Beta-crystallin S) (Gamma-S-crystallin)	CRYGS	Oryctolagus cuniculus (Rabbit)	179
+A4L9I9	CRBA2_RABIT	reviewed	Beta-crystallin A2 (Beta-A2 crystallin)	CRYBA2	Oryctolagus cuniculus (Rabbit)	197
+Q0GA40	LGSN_RABIT	reviewed	Lengsin (Glutamate-ammonia ligase domain-containing protein 1)	LGSN GLULD1 LGS	Oryctolagus cuniculus (Rabbit)	571
+A4L9J1	A4L9J1_RABIT	unreviewed	Lens fiber membrane intrinsic protein	Lim2	Oryctolagus cuniculus (Rabbit)	173
+A4L9L8	A4L9L8_RABIT	unreviewed	Phakinin	Bfsp2	Oryctolagus cuniculus (Rabbit)	396
+Q95KK6	Q95KK6_RABIT	unreviewed	Beta A3-crystallin		Oryctolagus cuniculus (Rabbit)	215
+Q9XSZ3	Q9XSZ3_RABIT	unreviewed	Eye sodium bicarbonate cotransport protein NBC2 (Fragment)		Oryctolagus cuniculus (Rabbit)	88
+Q95KK5	Q95KK5_RABIT	unreviewed	Beta A1-crystallin		Oryctolagus cuniculus (Rabbit)	198
+
+</pre>
+</div>
+</div>
+
+</div>
+
 </div>
 
 </div>
@@ -14631,10 +15180,10 @@ a.anchor-link {
 </ul>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[10]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># SOLUTION - EXERCISE 02</span>
@@ -14648,10 +15197,50 @@ a.anchor-link {
 </div>
 </div>
 
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>Entry	Entry name	Status	Protein names	Gene names	Organism	Length
+D0NZW3	D0NZW3_PHYIT	unreviewed	Secreted RxLR effector peptide protein, putative	PITG_23154	Phytophthora infestans (strain T30-4) (Potato late blight fungus)	79
+D0NKZ7	D0NKZ7_PHYIT	unreviewed	Secreted RxLR effector peptide protein, putative	PITG_22972	Phytophthora infestans (strain T30-4) (Potato late blight fungus)	76
+D0NPQ2	D0NPQ2_PHYIT	unreviewed	Secreted RxLR effector peptide protein, putative	PITG_23016	Phytophthora infestans (strain T30-4) (Potato late blight fungus)	77
+D0NNG1	D0NNG1_PHYIT	unreviewed	Secreted RxLR effector peptide protein, putative	PITG_23011	Phytophthora infestans (strain T30-4) (Potato late blight fungus)	74
+D0N526	D0N526_PHYIT	unreviewed	Secreted RxLR effector peptide protein, putative	PITG_22802	Phytophthora infestans (strain T30-4) (Potato late blight fungus)	74
+D0RM37	D0RM37_PHYIT	unreviewed	Secreted RxLR effector peptide protein, putative (Fragment)	PITG_23230	Phytophthora infestans (strain T30-4) (Potato late blight fungus)	70
+D0NC53	D0NC53_PHYIT	unreviewed	Secreted RxLR effector peptide protein, putative	PITG_09497	Phytophthora infestans (strain T30-4) (Potato late blight fungus)	71
+D0NC52	D0NC52_PHYIT	unreviewed	Secreted RxLR effector peptide protein, putative	PITG_22889 PITG_22890	Phytophthora infestans (strain T30-4) (Potato late blight fungus)	76
+D0RM38	D0RM38_PHYIT	unreviewed	Secreted RxLR effector peptide protein, putative	PITG_23231	Phytophthora infestans (strain T30-4) (Potato late blight fungus)	72
+D0NR19	D0NR19_PHYIT	unreviewed	Secreted RxLR effector peptide protein, putative (Fragment)	PITG_23026	Phytophthora infestans (strain T30-4) (Potato late blight fungus)	71
+D0N0J8	D0N0J8_PHYIT	unreviewed	Secreted RxLR effector peptide protein, putative	PITG_22727	Phytophthora infestans (strain T30-4) (Potato late blight fungus)	70
+D0NJW0	D0NJW0_PHYIT	unreviewed	Secreted RxLR effector peptide protein, putative	PITG_22987 PITG_23199	Phytophthora infestans (strain T30-4) (Potato late blight fungus)	70
+D0N8C9	D0N8C9_PHYIT	unreviewed	Secreted RxLR effector peptide protein, putative	PITG_22813	Phytophthora infestans (strain T30-4) (Potato late blight fungus)	72
+D0P4W7	D0P4W7_PHYIT	unreviewed	Secreted RxLR effector peptide protein, putative	PITG_23216	Phytophthora infestans (strain T30-4) (Potato late blight fungus)	77
+D0NCS4	D0NCS4_PHYIT	unreviewed	Secreted RxLR effector peptide protein, putative	PITG_22900	Phytophthora infestans (strain T30-4) (Potato late blight fungus)	78
+D0P471	D0P471_PHYIT	unreviewed	Secreted RxLR effector peptide protein, putative	PITG_23206	Phytophthora infestans (strain T30-4) (Potato late blight fungus)	80
+D0NY99	D0NY99_PHYIT	unreviewed	PexRD36 secreted RxLR effector peptide, putative	PITG_23132	Phytophthora infestans (strain T30-4) (Potato late blight fungus)	76
+D0NX57	D0NX57_PHYIT	unreviewed	RXLR effector family protein, putative	PITG_18160	Phytophthora infestans (strain T30-4) (Potato late blight fungus)	80
+
+</pre>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[11]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># SOLUTION - EXERCISE 02</span>
@@ -14663,6 +15252,29 @@ a.anchor-link {
      </div>
 </div>
 </div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>Entry	Entry name	Status	Protein names	Gene names	Organism	Length
+P67840	HSP1_SETBR	reviewed	Sperm protamine P1	PRM1	Setonix brachyurus (Quokka)	61
+
+</pre>
+</div>
+</div>
+
+</div>
+
 </div>
 
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
