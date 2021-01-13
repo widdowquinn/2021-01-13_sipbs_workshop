@@ -12,6 +12,40 @@ You can run these workshop files at [MyBinder](https://mybinder.org/v2/gh/widdow
 
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/widdowquinn/2021-01-13_sipbs_workshop/master?filepath=index.ipynb)
 
+-------
+
+<!-- TOC -->
+
+- [SIPBS Research Day Bioinformatics Workshop 13th January 2021](#sipbs-research-day-bioinformatics-workshop-13th-january-2021)
+  - [Introduction](#introduction)
+  - [How are we doing this?](#how-are-we-doing-this)
+  - [How do I get help?](#how-do-i-get-help)
+  - [What if I miss something?](#what-if-i-miss-something)
+  - [Who is this workshop for?](#who-is-this-workshop-for)
+  - [You will need](#you-will-need)
+  - [Learning Objectives](#learning-objectives)
+  - [Workshop Sections](#workshop-sections)
+    - [Learning Outcomes](#learning-outcomes)
+  - [Where next?](#where-next)
+  - [Where next?](#where-next-1)
+
+<!-- /TOC -->
+
+-------
+
+## How are we doing this?
+
+The workshop will be presented over Zoom, and you will be following along by working through the materials and examples in a modern browser (such as Chrome, Mozilla Firefox, or Microsoft Edge). You will need to have two windows open - this could be across two monitors, or on a single screen. You might want to use a second device, e.g. a tablet or phone, to follow the Zoom component and give you maximum screen space for your browser/coding session. On a single screen, you might arrange windows as below:
+
+![Screen layout for workshop](assets/images/screen_layout.png)
+
+## How do I get help?
+
+- Please ask questions in the Zoom chat (to `Everyone`) - Steven Ford will be fielding these, to help ensure smooth running of the presentation part of the workshop.
+
+## What if I miss something?
+
+The materials will remain available at this site, so you will be able to return to them as a reference, or to cover items you may have missed.
 
 -------
 
@@ -60,8 +94,17 @@ We will be running the workshop using the online [`MyBinder`](https://mybinder.o
 
 ## Where next?
 
+## Where next?
+
 - [Ten great papers for biologists starting out in computational biology](https://widdowquinn.github.io/ten_great_papers/) - collectively, an excellent primer/jumping off point for good practice in bioinformatics and computational biology
 - [The Carpentries](https://carpentries.org/) - excellent introductory courses in foundational coding and data science; <font color='firebrick'><b>we hope to be running at least one of these courses online this year in SIPBS</b></font>
+- [Bioinformatics Workbook](https://bioinformaticsworkbook.org/#gsc.tab=0) - tutorials on topics in bioinformatics
+- [Bioinformatics Algorithms](https://www.bioinformaticsalgorithms.org/home) - the home site for a textbook on bioinformatics algorithms, including lectures and other materials
+
+
+- [Introduction to Jupyter notebooks](https://realpython.com/jupyter-notebook-introduction/) - a good introduction to working in the Jupyter notebook system (which we're using for the workshop), and installing it on your own machine.
+  - [RealPython](https://realpython.com/) - this page is part of the `RealPython` site, which is a good (but not free) resource for learning or improving your Python skills
+
 - [rosalind.info](http://rosalind.info/problems/locations/) - interactive, self-paced bioinformatics problems
 - [Advent of Code](https://adventofcode.com/) - yearly programming challenges, themed around Christmas
 
